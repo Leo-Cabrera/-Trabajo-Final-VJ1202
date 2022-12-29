@@ -1,0 +1,513 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.37f1 (8c66806a0c04) revision 9201280'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 16270 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.37f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Informatica básica/Trabajo-Final-VJ1202-Karina-Cabrera/Proyecto final 2.0
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61835
+Successfully changed project path to: D:/Informatica básica/Trabajo-Final-VJ1202-Karina-Cabrera/Proyecto final 2.0
+D:/Informatica básica/Trabajo-Final-VJ1202-Karina-Cabrera/Proyecto final 2.0
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 75.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.37f1 (8c66806a0c04)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Informatica básica/Trabajo-Final-VJ1202-Karina-Cabrera/Proyecto final 2.0/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940M (ID=0x1347)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   26.21.14.3602
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003663 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Domain Reload Profiling:
+	ReloadAssembly (869ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (641ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (213ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (111ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006902 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.565 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1566ms)
+		BeginReloadAssembly (214ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1256ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (409ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (483ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2211 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.0 MB.
+System memory in use after: 97.9 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2643.
+Total: 5.285400 ms (FindLiveObjects: 0.281300 ms CreateObjectMapping: 0.231700 ms MarkObjects: 4.540500 ms  DeleteObjects: 0.230700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Warped City 2/Artwork/Environment/background
+  artifactKey: Guid(4c85e72a81bcd467191a0408fb1fc0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background using Guid(4c85e72a81bcd467191a0408fb1fc0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e5b700d0c0cf7db8098421634f572d') in 0.008668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/middle.png
+  artifactKey: Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/middle.png using Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e2ddb9e20da938a4fc3e0c5f5a3053') in 0.194001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.png
+  artifactKey: Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.png using Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d9a2e6aa318a58e25902dcb3573e8b') in 0.018773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset.png
+  artifactKey: Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset.png using Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e6292fd3b402bbbdd47476d37d898f') in 0.019844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/Warped City 2/Artwork/Environment
+  artifactKey: Guid(ea1eaa9d137874efe96771a87b84ce97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment using Guid(ea1eaa9d137874efe96771a87b84ce97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3f4f48903338c5e29ce1317066ded4') in 0.004182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/front.png
+  artifactKey: Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/front.png using Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89fa8b822ea11a8a3ee1bb9390a56230') in 0.020766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.841374 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.png
+  artifactKey: Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.png using Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0110554791bf4b2de55782660708028') in 0.012207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.887710 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.png
+  artifactKey: Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.png using Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6d8c5565b5ee66371420200c45afe6') in 0.015761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.364556 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.png
+  artifactKey: Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.png using Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb41700e5e07f17203d9539f8ea3c3f3') in 0.014451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.799891 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0ab49577333b14c1893e8fdbee2cc8') in 0.050897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.717280 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612857592d823d9904a7b0f8a665c6ce') in 0.016652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back_0.asset
+  artifactKey: Guid(86b39cf3d7ba50445b09c0daab331b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back_0.asset using Guid(86b39cf3d7ba50445b09c0daab331b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7ce8a61cea03b27e6be356fc0d1016') in 0.027370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 148.514582 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.png
+  artifactKey: Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.png using Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813c9141ba462647ee1010eb2d1708a1') in 0.019498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.026417 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d74519c0120ec45f5d236d21c35a6f') in 0.017566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.828787 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b4cffabf74af161c5f674b808bbef9') in 0.019601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back_1.asset
+  artifactKey: Guid(1694acfc44fd74f4893324a4b333a0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back_1.asset using Guid(1694acfc44fd74f4893324a4b333a0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c925f74ad910b9b8d14f1f40473d191e') in 0.010759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.138521 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.png
+  artifactKey: Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.png using Guid(27967ee1f727640d3a07da062fa83401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4062b6c4c475da22bbde7e5630d495e') in 0.016488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 166.412153 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64662f33cc3fd121bdce973fc27e36a') in 0.022420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.345953 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab1cb1946cf1ba0be8b0bc17a58a441') in 0.013201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.838064 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd35690d77d89389cfd4a047cd9358ff') in 0.017443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.940809 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1_0.asset
+  artifactKey: Guid(2a3bcdfa8cbb1a344a9979a14ebbdac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1_0.asset using Guid(2a3bcdfa8cbb1a344a9979a14ebbdac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e66fa4ea10aba8cc01d60b81c7722ce') in 0.013910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafeb31a076ee5a11b1240429c90ba7c') in 0.016645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1_1.asset
+  artifactKey: Guid(27569b0a6fdda51489d13f780d96c117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1_1.asset using Guid(27569b0a6fdda51489d13f780d96c117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b61017278725a00cf13344521176793') in 0.011995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.339483 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0ba4a8b0a720c4e2166b25997f0586') in 0.018932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.776284 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1258ff8f4a6f54f5d75e151dc59ec1') in 0.024689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.779913 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876ec28db15949149181c5eaf2a7b337') in 0.017202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.079767 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b707cfe8a0e99c4feff5dd02111eb7') in 0.026791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.625647 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back 1.png
+  artifactKey: Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back 1.png using Guid(e7bf0443d2574a34cac28020f519370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b1496d1f4f03b1965da71832db114d') in 0.024009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.654688 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/front.png
+  artifactKey: Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/front.png using Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68a5ac12613334f6ff517e96f76c749') in 0.011722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.212282 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/front.png
+  artifactKey: Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/front.png using Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe728da3169b56a9c49b7939db2737d') in 0.021826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.124205 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/middle.png
+  artifactKey: Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/middle.png using Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed60adf89fde2dfdd9eb04b385431545') in 0.012392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.452084 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/middle.png
+  artifactKey: Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/middle.png using Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86f73820205538b8da2166bfb59a4b6') in 0.023719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.162088 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/middle.png
+  artifactKey: Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/middle.png using Guid(186447cd9ce584283af377113c1cade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c256d6b5cc98625d2bbf096eb5a741e') in 0.018409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.207284 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ea9e3b7757446c2a6403e57f3ce9e8') in 0.309714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/middle_0.asset
+  artifactKey: Guid(e2fc3ddccec95434587ca57fa200b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/middle_0.asset using Guid(e2fc3ddccec95434587ca57fa200b43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092a63062ae71c6ca4f30548fd4dcac5') in 0.016068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.203373 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/front.png
+  artifactKey: Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/front.png using Guid(6e929c941613e44cbb3e08149ba789e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40955d94ea63f290ba6593c37418486b') in 0.014435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.789697 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/back.prefab
+  artifactKey: Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/back.prefab using Guid(ee3a6b0dee47f1a4fb1a2fe20409b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6635d436d76176227e792713b37eef6') in 0.023075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000489 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/background/front_0.asset
+  artifactKey: Guid(c6fd332503b458343a48c3dc20dcc5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/background/front_0.asset using Guid(c6fd332503b458343a48c3dc20dcc5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af2fd56416b82a09146d8b9dfa37c73') in 0.011900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.893274 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset.png
+  artifactKey: Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset.png using Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a09baca627fc9770c472a41e1130011e') in 0.011096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.974976 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset.png
+  artifactKey: Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset.png using Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d9740f68707ca52487d1a70e6b68df') in 0.043237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.618662 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/level palette.prefab
+  artifactKey: Guid(442fa201100b89f418e7275ebcda19aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/level palette.prefab using Guid(442fa201100b89f418e7275ebcda19aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebf42bfb7cd27984ddfc394f526bc0b5') in 0.017552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.753011 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/level palette.prefab
+  artifactKey: Guid(442fa201100b89f418e7275ebcda19aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/level palette.prefab using Guid(442fa201100b89f418e7275ebcda19aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87afe7b87ff6fc8c09951ea18956b548') in 0.027861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset_2.asset
+  artifactKey: Guid(7ecf2fbca9d70134a9ced5744016e3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset_2.asset using Guid(7ecf2fbca9d70134a9ced5744016e3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ceb807a9a424007e966394b5dac6e00') in 0.012845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset_0.asset
+  artifactKey: Guid(c32bc0951dc29ac42a4165b85055eedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset_0.asset using Guid(c32bc0951dc29ac42a4165b85055eedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb0e1df04cfef6eed5dd6e91dee8443') in 0.016791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset_1.asset
+  artifactKey: Guid(614365f21b3b9d2449b038a48c400997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset_1.asset using Guid(614365f21b3b9d2449b038a48c400997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e330844c2b28500e50ebac04a998fa8') in 0.012930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset_3.asset
+  artifactKey: Guid(eecf616e01e98bf439050f17fab4998f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset_3.asset using Guid(eecf616e01e98bf439050f17fab4998f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a00fcfc676f2d72ddb1a1159d5525dd') in 0.024435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset_5.asset
+  artifactKey: Guid(ea1508508e3646f48b1ae86199fec870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset_5.asset using Guid(ea1508508e3646f48b1ae86199fec870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14fbf4c3d0308c3f356a1bae41cc2b09') in 0.015215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset_4.asset
+  artifactKey: Guid(9bffcb8f500649f40bceb94668d85504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset_4.asset using Guid(9bffcb8f500649f40bceb94668d85504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f87e5869cd516da5f37df5fbcee9e43') in 0.012624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.268181 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset.png
+  artifactKey: Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset.png using Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a190089b2300e959cbcc53f568ff86') in 0.041315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 88.481499 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset.png
+  artifactKey: Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset.png using Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cbbcab0d5f3ac1e0d789d28240d44e') in 0.037391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.429708 seconds.
+  path: Assets/Warped City 2/Artwork/Environment/tileset.png
+  artifactKey: Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped City 2/Artwork/Environment/tileset.png using Guid(375c6f765985c4a539f757c9c8b5cfec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575be15742c8af548553cdd06c3a49ca') in 0.033574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 383.695842 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.003534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.646073 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(0fe5cbe81c62c714885939daefb66136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(0fe5cbe81c62c714885939daefb66136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea25fd9e9100082e33a9f34be484f0d') in 0.004766 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005351 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1263ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1030ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (352ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (390ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2207 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.3 MB.
+System memory in use after: 101.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2691.
+Total: 4.226800 ms (FindLiveObjects: 0.186600 ms CreateObjectMapping: 0.087500 ms MarkObjects: 3.764400 ms  DeleteObjects: 0.187300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 41.757091 seconds.
+  path: Assets/Scripts/ParallaxLayer.cs
+  artifactKey: Guid(0910052c42e8c7d4490d4d4a707f89a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ParallaxLayer.cs using Guid(0910052c42e8c7d4490d4d4a707f89a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb69e7257caba0b958967a62a11cf234') in 0.010674 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

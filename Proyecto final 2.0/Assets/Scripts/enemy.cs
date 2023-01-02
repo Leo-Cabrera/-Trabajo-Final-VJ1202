@@ -10,7 +10,7 @@ public class enemy : MonoBehaviour
 
     Rigidbody2D rigidbody2D;
     float timer;
-    public int direction = 1;
+    int direction = 1;
     bool destroyed = false;
     
     Animator animator;
@@ -56,16 +56,6 @@ public class enemy : MonoBehaviour
  
         rigidbody2D.MovePosition(position);
     }
-
-    public void ChangeDirection(int amount)
-    {
-
-        if (amount < 0)
-        {
-              direction = direction * amount;
-        }
-    }
-    
     
     void OnCollisionEnter2D(Collision2D other)
     {

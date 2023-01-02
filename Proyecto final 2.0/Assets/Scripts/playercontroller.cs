@@ -120,6 +120,7 @@ public class playercontroller : MonoBehaviour
             animator.SetBool("Duck",true);
         }
 
+    
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
@@ -129,24 +130,25 @@ public class playercontroller : MonoBehaviour
        
        if(Input.GetKeyDown(KeyCode.C))
         {
-            Launch();
+        Launch();
         }
     }
+    
 
    public void ChangeHealth(int amount)
     {
 
-    if (amount < 0)
-        {
-            if (isInvincible)
-                return;
-            
-            isInvincible = true;
-            invincibleTimer = timeInvincible;
-        }
+        if (amount < 0)
+            {
+                if (isInvincible)
+                    return;
+                
+                isInvincible = true;
+                invincibleTimer = timeInvincible;
+            }
 
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+            currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+            Debug.Log(currentHealth + "/" + maxHealth);
     }
     
    void Launch()
@@ -158,4 +160,5 @@ public class playercontroller : MonoBehaviour
 
         animator.SetTrigger("Launch");
     }
+
 }

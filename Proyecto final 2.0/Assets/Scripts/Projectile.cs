@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
         rigidbody2d.AddForce(direction * force);
     }
     
-    void Update()
+   void Update()
     {
         if(transform.position.magnitude > 1000.0f)
         {
@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
         enemy e = other.collider.GetComponent<enemy>();
         if (e != null)
         {
-            Destroy(e);
+            e.Fix();
         }
     
         Destroy(gameObject);

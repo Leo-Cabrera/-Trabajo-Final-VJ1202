@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1672216334806442284}
   - component: {fileID: 1672216334806442285}
   - component: {fileID: 1672216334806442286}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: Check Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 1672216335324598013}
   - component: {fileID: 1672216335324598012}
   - component: {fileID: 7174669729184755266}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,14 +170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5
-  jumpSpeed: 6
-  doublejumpSpeed: 2.5
+  jumpSpeed: 7
+  doublejumpSpeed: 5
   timeInvincible: 0
   invincibleTimer: 0
   maxHealth: 5
   projectilePrefab: {fileID: 1832656052639144894, guid: 4fb3b31df21ec4141a4a301d621a4007, type: 3}
-  SpriteRenderer: {fileID: 0}
-  animator: {fileID: 0}
+  SpriteRenderer: {fileID: 1672216335324597986}
+  animator: {fileID: 7174669729184755266}
 --- !u!61 &1672216335324598013
 BoxCollider2D:
   m_ObjectHideFlags: 0

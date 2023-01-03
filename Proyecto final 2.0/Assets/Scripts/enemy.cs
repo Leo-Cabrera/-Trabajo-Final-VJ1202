@@ -76,18 +76,22 @@ public class enemy : MonoBehaviour
     }
 
 
-    public void Destroy()
+    public void ByeRobot()
     {
         
         destroyed = true;
         rigidbody2D.simulated = false;
         animator.SetTrigger("Destroyed");
+        PlaySound(clip);
 
-        playercontroller controller = GetComponent<playercontroller>();
-        controller.PlaySound(clip);
-
-        Destroy(audioSource);
         
+        Destroy(gameObject, 1.5f);
+        
+        
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
    
         

@@ -168,7 +168,6 @@ MonoBehaviour:
   speed: 3
   vertical: 0
   changeTime: 3
-  walk: {fileID: 8300000, guid: 06754eef466b9714480d2feae7681591, type: 3}
   clip: {fileID: 8300000, guid: 79cb36fd3cbaa01488ff24307c53b849, type: 3}
 --- !u!82 &-1816285979375498264
 AudioSource:

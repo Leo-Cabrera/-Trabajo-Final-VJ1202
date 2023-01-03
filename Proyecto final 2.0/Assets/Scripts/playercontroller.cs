@@ -7,26 +7,31 @@ public class playercontroller : MonoBehaviour
     public float runSpeed = 2;
     public float jumpSpeed = 3;
     public float doublejumpSpeed = 2.5f;
+    private bool canDoubleJump;
+
     public float timeInvincible = 2.0f;
     private float invincibleTimer;
     private bool isInvincible;
-    private bool canDoubleJump;
-    public int maxHealth = 5;
+
+
     public GameObject projectilePrefab;
+    public Transform ProjectileController;
 
     public AudioClip throwSound;
     public AudioClip hitSound;
+    AudioSource audioSource;
     
     
     public int health { get { return currentHealth; }}
     int currentHealth;
+    public int maxHealth = 5;
 
     public SpriteRenderer SpriteRenderer;
     public Animator animator;
     Vector2 lookDirection = new Vector2(1,0);
 
     Rigidbody2D rg2d;
-    AudioSource audioSource;
+    
 
     void Start()
     {
@@ -62,9 +67,21 @@ public class playercontroller : MonoBehaviour
                 {
                     if(canDoubleJump)
                     {
-                        animator.SetBool("DoubleJump",true);
-                        rg2d.velocity = new Vector2 (rg2d.velocity.x , doublejumpSpeed);
-                        canDoubleJump = false;
+                        if (rg2d.velocity.y < 0)
+                            {
+                                animator.SetBool("Fall", true );
+                                animator.SetBool("Jump", false);
+                            }
+                            else if (rg2d.velocity.y > 0);
+                            {
+                                animator.SetBool("Fall", false );
+                                animator.SetBool("Jump", true);
+                                animator.SetBool("DoubleJump",true);
+                                rg2d.velocity = new Vector2 (rg2d.velocity.x , doublejumpSpeed);
+                                canDoubleJump = false;
+                            }
+                            animator.SetBool("Run", false);
+                        
                     }
                 }
             }
@@ -72,8 +89,18 @@ public class playercontroller : MonoBehaviour
 
         if (checkGround.isGrounded==false)
         {
+            if (rg2d.velocity.y < 0)
+            {
+                animator.SetBool("Fall", true );
+                animator.SetBool("Jump", false);
+            }
+            else if (rg2d.velocity.y > 0);
+            {
+                animator.SetBool("Fall", false );
+                animator.SetBool("Jump", true);
+            }
             animator.SetBool("Run", false);
-            animator.SetBool("Jump", true);
+                
             
         }
 
@@ -87,18 +114,19 @@ public class playercontroller : MonoBehaviour
         
         }
 
-        if (rg2d.velocity.y < 0)
-        {
-            animator.SetBool("Fall", true );
-        }
-        else if (rg2d.velocity.y > 0);
-        {
-            animator.SetBool("Fall", false );
-        }
+        
 
     }
     void FixedUpdate()
     {
+        if (rg2d.velocity.y > 0)
+        {
+            animator.SetBool("Fall", true );
+        }
+        else if (rg2d.velocity.y < 0);
+        {
+            animator.SetBool("Fall", false );
+        }
 
         //right and left move
 
@@ -111,6 +139,7 @@ public class playercontroller : MonoBehaviour
             animator.SetFloat("Move X", 1);
             animator.SetFloat("Move Y", 0);
             animator.SetBool("Shoot",false);
+            animator.SetBool("damage",false);
             
 
         }
@@ -124,6 +153,7 @@ public class playercontroller : MonoBehaviour
             animator.SetFloat("Move X", -1);
             animator.SetFloat("Move Y", 0);
             animator.SetBool("Shoot",false);
+            animator.SetBool("damage",false);
             
         }
 
@@ -131,8 +161,11 @@ public class playercontroller : MonoBehaviour
         {
             rg2d.velocity = new Vector2 (0,rg2d.velocity.y);
             animator.SetBool("Run", false);
+            animator.SetBool("Jump", false);
+            animator.SetBool("DobleJump", false);
             animator.SetBool("Duck",false);
             animator.SetBool("Shoot",false);
+            animator.SetBool("Fall", true);
             
         }
 
@@ -141,6 +174,7 @@ public class playercontroller : MonoBehaviour
         {
             animator.SetBool("Duck",true);
             animator.SetBool("Shoot",false);
+            animator.SetBool("damage",false);
         }
 
         if (isInvincible)
@@ -152,13 +186,21 @@ public class playercontroller : MonoBehaviour
        
        if(Input.GetKeyDown(KeyCode.C))
         {
-            Launch();
+            PlaySound(throwSound);
+
+            Instantiate(projectilePrefab, ProjectileController.position, Quaternion.identity);
+            
+            
             animator.SetBool("Shoot",true );
             if( rg2d.velocity.x < 0)
             {
                 SpriteRenderer.flipX = true;
 
             }
+            
+             animator.SetTrigger("Launch");
+
+             
         }
 
         
@@ -176,6 +218,12 @@ public class playercontroller : MonoBehaviour
             invincibleTimer = timeInvincible;
 
             PlaySound(hitSound);
+            animator.SetBool("damage",true);
+            animator.SetBool("Jump", false);
+            animator.SetBool("DoubleJump", false);
+            animator.SetBool("Fall", false);
+            animator.SetBool("Run", false);
+            animator.SetBool("Duck",false);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -183,17 +231,7 @@ public class playercontroller : MonoBehaviour
     }
     
 
-    void Launch()
-    {
-        GameObject projectileObject = Instantiate(projectilePrefab, rg2d.position + Vector2.up * 0.36f, Quaternion.identity);
-
-        Projectile projectile = projectileObject.GetComponent<Projectile>();
-        projectile.Launch(lookDirection, 300);
-
-        animator.SetTrigger("Launch");
-
-        PlaySound(throwSound);
-    }
+  
 
     public void PlaySound(AudioClip clip)
     {

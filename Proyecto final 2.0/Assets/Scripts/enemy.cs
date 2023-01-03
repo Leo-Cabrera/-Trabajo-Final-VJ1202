@@ -7,6 +7,7 @@ public class enemy : MonoBehaviour
    public float speed = 3.0f;
     public bool vertical;
     public float changeTime = 3.0f;
+    
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -14,12 +15,16 @@ public class enemy : MonoBehaviour
     bool destroyed = false;
     
     Animator animator;
+    
+    public AudioClip clip;
+    AudioSource audioSource;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,15 +51,18 @@ public class enemy : MonoBehaviour
             position.y = position.y + Time.deltaTime * speed * direction;
             animator.SetFloat("Move X", 0);
             animator.SetFloat("Move Y", direction);
+            
         }
         else
         {
             position.x = position.x + Time.deltaTime * speed * direction;
             animator.SetFloat("Move X", direction);
             animator.SetFloat("Move Y", 0);
+           
         }
  
         rigidbody2D.MovePosition(position);
+        
     }
     
     void OnCollisionEnter2D(Collision2D other)
@@ -68,11 +76,20 @@ public class enemy : MonoBehaviour
     }
 
 
-    public void Fix()
+    public void Destroy()
     {
+        
         destroyed = true;
         rigidbody2D.simulated = false;
+        animator.SetTrigger("Destroyed");
+
+        playercontroller controller = GetComponent<playercontroller>();
+        controller.PlaySound(clip);
+
+        Destroy(audioSource);
+        
     }
+   
         
 }
 

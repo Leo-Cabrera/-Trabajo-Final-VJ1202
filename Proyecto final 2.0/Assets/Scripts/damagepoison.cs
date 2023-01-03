@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class damagepoison : MonoBehaviour
 {
+    public AudioClip collectedClip;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         playercontroller controller = other.GetComponent<playercontroller >();
@@ -12,6 +14,8 @@ public class damagepoison : MonoBehaviour
         {
             controller.ChangeHealth(-1);
             Destroy(gameObject);
+
+            controller.PlaySound(collectedClip);
         }
     }
 }

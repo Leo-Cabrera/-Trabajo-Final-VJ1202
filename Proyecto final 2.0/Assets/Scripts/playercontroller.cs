@@ -7,12 +7,16 @@ public class playercontroller : MonoBehaviour
     public float runSpeed = 2;
     public float jumpSpeed = 3;
     public float doublejumpSpeed = 2.5f;
-    public float timeInvincible;
-    public float invincibleTimer;
+    public float timeInvincible = 2.0f;
+    private float invincibleTimer;
     private bool isInvincible;
     private bool canDoubleJump;
     public int maxHealth = 5;
     public GameObject projectilePrefab;
+
+    public AudioClip throwSound;
+    public AudioClip hitSound;
+    
     
     public int health { get { return currentHealth; }}
     int currentHealth;
@@ -22,6 +26,7 @@ public class playercontroller : MonoBehaviour
     Vector2 lookDirection = new Vector2(1,0);
 
     Rigidbody2D rg2d;
+    AudioSource audioSource;
 
     void Start()
     {
@@ -29,10 +34,20 @@ public class playercontroller : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
+        Vector2 move = new Vector2(rg2d.velocity.x, rg2d.velocity.y);
+        
+        if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
+        }
+
          // jump
         if( Input.GetKey("w"))
         {
@@ -93,6 +108,9 @@ public class playercontroller : MonoBehaviour
             SpriteRenderer.flipX = false;
             animator.SetBool("Run", true);
             animator.SetBool("Duck",false);
+            animator.SetFloat("Move X", 1);
+            animator.SetFloat("Move Y", 0);
+            animator.SetBool("Shoot",false);
             
 
         }
@@ -103,6 +121,9 @@ public class playercontroller : MonoBehaviour
             SpriteRenderer.flipX = true;
             animator.SetBool("Run", true);
             animator.SetBool("Duck",false);
+            animator.SetFloat("Move X", -1);
+            animator.SetFloat("Move Y", 0);
+            animator.SetBool("Shoot",false);
             
         }
 
@@ -111,6 +132,7 @@ public class playercontroller : MonoBehaviour
             rg2d.velocity = new Vector2 (0,rg2d.velocity.y);
             animator.SetBool("Run", false);
             animator.SetBool("Duck",false);
+            animator.SetBool("Shoot",false);
             
         }
 
@@ -118,6 +140,7 @@ public class playercontroller : MonoBehaviour
         if (Input.GetKey("s") || Input.GetKey("down"))
         {
             animator.SetBool("Duck",true);
+            animator.SetBool("Shoot",false);
         }
 
         if (isInvincible)
@@ -130,32 +153,51 @@ public class playercontroller : MonoBehaviour
        if(Input.GetKeyDown(KeyCode.C))
         {
             Launch();
+            animator.SetBool("Shoot",true );
+            if( rg2d.velocity.x < 0)
+            {
+                SpriteRenderer.flipX = true;
+
+            }
         }
+
+        
     }
 
    public void ChangeHealth(int amount)
     {
 
-    if (amount < 0)
+        if (amount < 0)
         {
             if (isInvincible)
                 return;
             
             isInvincible = true;
             invincibleTimer = timeInvincible;
+
+            PlaySound(hitSound);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
     
-   void Launch()
+
+    void Launch()
     {
-        GameObject projectileObject = Instantiate(projectilePrefab, rg2d.position + Vector2.up * 0.5f, Quaternion.identity);
+        GameObject projectileObject = Instantiate(projectilePrefab, rg2d.position + Vector2.up * 0.36f, Quaternion.identity);
 
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+
+        PlaySound(throwSound);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
+ 

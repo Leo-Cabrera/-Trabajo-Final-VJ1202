@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     
     void Update()
     {
-        if(transform.position.magnitude > 1000.0f)
+        if(transform.position.magnitude > 2000.0f)
         {
             Destroy(gameObject);
         }
@@ -29,9 +29,11 @@ public class Projectile : MonoBehaviour
         enemy e = other.collider.GetComponent<enemy>();
         if (e != null)
         {
-            Destroy(e);
+            e.Destroy();
         }
     
         Destroy(gameObject);
     }
+
+    
 }
